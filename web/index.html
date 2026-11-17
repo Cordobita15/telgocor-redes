@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>
+(function(){try{if(/[?&]elegir/.test(location.search))return;var s=localStorage.getItem("telgocor-sucursal");if(s==="la-rioja"||s==="catamarca"){location.replace(s+"/"+location.hash);}}catch(e){}})();
+</script>
+<title>Telgocor | Elegí tu sucursal: La Rioja o Catamarca</title>
+<meta name="description" content="Telgocor Aislantes Térmicos. La Rioja: placas, ladrillos para techos, molduras, telgopor granulado y esferas para la construcción. Catamarca: decoración para fiestas y eventos y materiales para la construcción.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://telgocor.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Telgocor">
+<meta property="og:url" content="https://telgocor.com/">
+<meta property="og:title" content="Telgocor · La Rioja y Catamarca">
+<meta property="og:description" content="Elegí tu sucursal: materiales para la construcción en La Rioja o decoración para eventos en Catamarca.">
+<meta property="og:image" content="https://telgocor.com/img/portada.jpg">
+<meta property="og:locale" content="es_AR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap">
+<style>
+:root{--negro:#111111;--rojo:#E53935;--rojo-osc:#C62828;--blanco:#fff;--ease:cubic-bezier(.2,.7,.2,1);color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--negro);color:#fff;font-family:"Montserrat","Segoe UI",Arial,sans-serif;display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+.topbar{height:6px;background:var(--rojo);flex:none}
+header{flex:none;display:flex;flex-direction:column;align-items:center;gap:18px;padding:clamp(22px,4vh,40px) 16px clamp(18px,3vh,30px);text-align:center}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:46px;height:auto}
+.wm{display:flex;flex-direction:column;line-height:1;text-align:left}
+.wm b{font-weight:900;font-size:1.45rem}
+.wm b span{color:var(--rojo)}
+.wm small{font-size:.6rem;letter-spacing:.32em;font-weight:600;margin-top:5px;opacity:.85}
+h1{margin:0;font-weight:900;text-transform:uppercase;font-size:clamp(1.5rem,4.2vw,2.6rem);line-height:1.1;letter-spacing:-.005em;text-wrap:balance}
+h1 em{font-style:normal;color:var(--rojo)}
+main{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:0}
+.suc{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,4vw,56px);min-height:min(68vh,640px);text-decoration:none;color:#fff;outline-offset:-6px}
+.suc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease),filter .6s ease;filter:saturate(.9)}
+.suc::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(17,17,17,.15) 0%,rgba(17,17,17,.55) 45%,rgba(17,17,17,.94) 100%);transition:background .5s ease}
+.suc + .suc{border-left:4px solid var(--rojo)}
+.suc:hover img,.suc:focus-visible img{transform:scale(1.06);filter:saturate(1.1)}
+.suc:hover::before{background:linear-gradient(180deg,rgba(17,17,17,.05) 0%,rgba(17,17,17,.45) 45%,rgba(17,17,17,.92) 100%)}
+.tag{align-self:flex-start;font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;background:var(--rojo);padding:7px 12px;margin-bottom:16px}
+.suc h2{margin:0;font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5.4vw,4.2rem);line-height:.95;letter-spacing:-.01em}
+.suc p{margin:14px 0 0;font-size:clamp(.98rem,1.4vw,1.1rem);color:rgba(255,255,255,.85);max-width:30em;line-height:1.5}
+.suc ul{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.suc li{font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);padding:6px 10px}
+.dir{display:flex;align-items:center;gap:8px;margin-top:18px;font-weight:600;font-size:.92rem;color:rgba(255,255,255,.85)}
+.dir svg{width:18px;height:18px;color:var(--rojo);flex:none}
+.entrar{margin-top:22px;align-self:flex-start;display:inline-flex;align-items:center;gap:12px;background:var(--rojo);color:#fff;font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:1rem;padding:17px 28px;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);box-shadow:0 4px 0 var(--rojo-osc);transition:transform .15s ease,background .15s ease}
+.entrar span{transition:transform .2s var(--ease);font-size:1.2em;line-height:1}
+.suc:hover .entrar{background:var(--rojo-osc);transform:translateY(-2px)}
+.suc:hover .entrar span{transform:translateX(5px)}
+.ultima{display:none;position:absolute;top:18px;right:18px;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:#fff;color:var(--negro);padding:6px 10px}
+.suc.es-ultima .ultima{display:block}
+footer{flex:none;text-align:center;font-size:.8rem;color:#bdbdbd;padding:16px;line-height:1.5}
+@media (max-width:760px){
+  main{grid-template-columns:1fr}
+  .suc{min-height:58vh}
+  .suc + .suc{border-left:0;border-top:4px solid var(--rojo)}
+}
+@media (prefers-reduced-motion:no-preference){
+  header,.suc{animation:entra .8s var(--ease) both}
+  .suc:nth-child(2){animation-delay:.12s}
+}
+@keyframes entra{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.suc img,.entrar,.entrar span{transition:none}}
+:focus-visible{outline:3px solid #fff}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="logoT" viewBox="470 568 985 812">
+      <polygon fill="currentColor" points="473,572 1450,572 1385,675 538,675"/>
+      <polygon fill="currentColor" points="553,731 937,731 937,1213 832,1280 832,833 620,833"/>
+      <polygon fill="#E53935" points="832,1302 937,1234 937,1376"/>
+      <polygon fill="#E53935" points="981,731 1366,731 1300,833 1086,833 1086,1306 981,1376"/>
+    </symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+<symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3z"/></symbol>
+</defs></svg>
+<div class="topbar"></div>
+<header>
+  <span class="brand" aria-label="Telgocor Aislantes Térmicos">
+    <svg style="color:#fff" aria-hidden="true"><use href="#logoT"/></svg>
+    <span class="wm"><b>TELGO<span>COR</span></b><small>AISLANTES TÉRMICOS</small></span>
+  </span>
+  <h1>¿Qué sucursal querés <em>consultar</em>?</h1>
+</header>
+<main>
+  <a class="suc" href="la-rioja/" data-suc="la-rioja">
+    <img src="img/portada.jpg" alt="" width="1200" height="896" fetchpriority="high">
+    <span class="ultima">Tu última visita</span>
+    <span class="tag">Construcción · también decoración</span>
+    <h2>La Rioja</h2>
+    <p>Telgopor para aislar y alivianar tu obra, y trabajos de decoración a medida.</p>
+    <ul><li>Placas</li><li>Ladrillos para techos</li><li>Molduras</li><li>Granulado</li><li>Esferas</li></ul>
+    <span class="dir"><svg aria-hidden="true"><use href="#i-pin"/></svg>Av. Rivadavia esq. Güemes</span>
+    <span class="entrar">Entrar a La Rioja <span aria-hidden="true">→</span></span>
+  </a>
+  <a class="suc" href="catamarca/" data-suc="catamarca">
+    <img src="img/cat/portada.jpg" alt="" width="1599" height="899">
+    <span class="ultima">Tu última visita</span>
+    <span class="tag">Decoración y construcción</span>
+    <h2>Catamarca</h2>
+    <p>Decoración a medida para tu fiesta y materiales para tu obra.</p>
+    <ul><li>Personajes</li><li>Marcos para selfies</li><li>Centros de mesa</li><li>Placas</li><li>Ladrillos para techos</li></ul>
+    <span class="dir"><svg aria-hidden="true"><use href="#i-pin"/></svg>Av. Alem esq. Mate de Luna</span>
+    <span class="entrar">Entrar a Catamarca <span aria-hidden="true">→</span></span>
+  </a>
+</main>
+<footer>Recordamos tu elección para la próxima visita. Podés cambiar de sucursal cuando quieras desde el menú.</footer>
+<script>
+(function(){
+  var last=null; try{last=localStorage.getItem("telgocor-sucursal");}catch(e){}
+  document.querySelectorAll(".suc").forEach(function(a){
+    if(a.dataset.suc===last) a.classList.add("es-ultima");
+    a.addEventListener("click",function(){try{localStorage.setItem("telgocor-sucursal",a.dataset.suc);}catch(e){}});
+  });
+})();
+</script>
+</body>
+</html>

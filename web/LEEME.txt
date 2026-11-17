@@ -1,0 +1,15 @@
+PÁGINA WEB TELGOCOR (La Rioja + Catamarca) — noviembre 2026
+
+Qué hay:
+- index.html ........ pantalla inicial "¿Qué sucursal querés consultar?"
+- la-rioja/ ......... página de La Rioja (la misma de siempre: construcción)
+- catamarca/ ........ página nueva de Catamarca (decoración y eventos)
+- img/ .............. fotos (img/cat = trabajos reales de Catamarca)
+
+La página recuerda la última sucursal visitada: la próxima vez que entres a telgocor.com
+te lleva directo a esa. Para elegir de nuevo, tocá el botón "La Rioja ⇄" / "Catamarca ⇄"
+del menú (o entrá a telgocor.com/?elegir=1).
+Links directos para compartir: telgocor.com/la-rioja/ y telgocor.com/catamarca/
+
+Cómo subirla: telgocor.com es el Worker "telgocor" en Cloudflare (Workers & Pages).
+Subí la carpeta COMPLETA (no solo index.html) como nueva versión de ese Worker.
