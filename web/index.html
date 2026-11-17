@@ -6,7 +6,7 @@
 <script>
 (function(){try{if(/[?&]elegir/.test(location.search))return;var s=localStorage.getItem("telgocor-sucursal");if(s==="la-rioja"||s==="catamarca"){location.replace(s+"/"+location.hash);}}catch(e){}})();
 </script>
-<title>Telgocor | Elegí tu sucursal: La Rioja o Catamarca</title>
+<title>Telgocor | ¿Dónde querés comprar? La Rioja o Catamarca</title>
 <meta name="description" content="Telgocor Aislantes Térmicos. La Rioja: placas, ladrillos para techos, molduras, telgopor granulado y esferas para la construcción. Catamarca: decoración para fiestas y eventos y materiales para la construcción.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://telgocor.com/">
@@ -36,6 +36,8 @@ header{flex:none;display:flex;flex-direction:column;align-items:center;gap:18px;
 .wm small{font-size:.6rem;letter-spacing:.32em;font-weight:600;margin-top:5px;opacity:.85}
 h1{margin:0;font-weight:900;text-transform:uppercase;font-size:clamp(1.5rem,4.2vw,2.6rem);line-height:1.1;letter-spacing:-.005em;text-wrap:balance}
 h1 em{font-style:normal;color:var(--rojo)}
+.sub{margin:-6px 0 0;font-size:clamp(.95rem,1.6vw,1.1rem);color:rgba(255,255,255,.75);font-weight:600}
+.dir{font-size:1.05rem!important}
 main{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:0}
 .suc{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,4vw,56px);min-height:min(68vh,640px);text-decoration:none;color:#fff;outline-offset:-6px}
 .suc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s var(--ease),filter .6s ease;filter:saturate(.9)}
@@ -88,31 +90,28 @@ footer{flex:none;text-align:center;font-size:.8rem;color:#bdbdbd;padding:16px;li
     <svg style="color:#fff" aria-hidden="true"><use href="#logoT"/></svg>
     <span class="wm"><b>TELGO<span>COR</span></b><small>AISLANTES TÉRMICOS</small></span>
   </span>
-  <h1>¿Qué sucursal querés <em>consultar</em>?</h1>
+  <h1>¿Dónde querés <em>comprar</em>?</h1>
+  <p class="sub">Elegí la sucursal más cercana</p>
 </header>
 <main>
   <a class="suc" href="la-rioja/" data-suc="la-rioja">
     <img src="img/portada.jpg" alt="" width="1200" height="896" fetchpriority="high">
     <span class="ultima">Tu última visita</span>
-    <span class="tag">Construcción · también decoración</span>
+    <span class="tag">Sucursal</span>
     <h2>La Rioja</h2>
-    <p>Telgopor para aislar y alivianar tu obra, y trabajos de decoración a medida.</p>
-    <ul><li>Placas</li><li>Ladrillos para techos</li><li>Molduras</li><li>Granulado</li><li>Esferas</li></ul>
     <span class="dir"><svg aria-hidden="true"><use href="#i-pin"/></svg>Av. Rivadavia esq. Güemes</span>
-    <span class="entrar">Entrar a La Rioja <span aria-hidden="true">→</span></span>
+    <span class="entrar">Comprar en La Rioja <span aria-hidden="true">→</span></span>
   </a>
   <a class="suc" href="catamarca/" data-suc="catamarca">
     <img src="img/cat/portada.jpg" alt="" width="1456" height="819">
     <span class="ultima">Tu última visita</span>
-    <span class="tag">Decoración y construcción</span>
+    <span class="tag">Sucursal</span>
     <h2>Catamarca</h2>
-    <p>Decoración a medida para tu fiesta y materiales para tu obra.</p>
-    <ul><li>Personajes</li><li>Marcos para selfies</li><li>Centros de mesa</li><li>Placas</li><li>Ladrillos para techos</li></ul>
     <span class="dir"><svg aria-hidden="true"><use href="#i-pin"/></svg>Av. Alem esq. Mate de Luna</span>
-    <span class="entrar">Entrar a Catamarca <span aria-hidden="true">→</span></span>
+    <span class="entrar">Comprar en Catamarca <span aria-hidden="true">→</span></span>
   </a>
 </main>
-<footer>Recordamos tu elección para la próxima visita. Podés cambiar de sucursal cuando quieras desde el menú.</footer>
+<footer>Recordamos tu sucursal para la próxima visita. Podés cambiarla cuando quieras desde el menú.</footer>
 <script>
 (function(){
   var last=null; try{last=localStorage.getItem("telgocor-sucursal");}catch(e){}
